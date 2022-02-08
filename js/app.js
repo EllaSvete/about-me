@@ -52,4 +52,5 @@ if(answerFive === 'yes' || answerFive ==='y'){
   alert('Surprise!');
 }
 
-// let responseTwo = prompt (`Thanks for playing, ${responseOne} !!');
+  alert(`Thanks for playing ${responseOne}!`);
+
