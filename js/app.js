@@ -4,7 +4,7 @@
 
 let responseOne = prompt('What is your name?');
 
-  alert(`Welcome ${responseOne}!!!`);
+  alert(`Welcome ${responseOne}! Ready to play a guessing game about me?`);
   console.log ('User entered in ' + responseOne);
 
 let answerOne = prompt('Do I have a cat?').toLowerCase();
@@ -43,13 +43,13 @@ if(answerFour === 'yes' || answerFour === 'y'){
   alert('fail!');
 }
 
-let answerFive = prompt('Do I know how to juggle?').toLowerCase();
+let answerFive = prompt('Is my astrological sign Scorpio?').toLowerCase();
 
 if(answerFive === 'yes' || answerFive ==='y'){
-  alert('Yep! I\'m a part-time clown.');
+  alert('No way! I\'m an Aquarius.');
   console.log ('User entered in ' + answerFive);
 } else if(answerFive === 'no' || answerFive === 'n'){
-  alert('Surprise!');
+  alert('That\'s right! I\'m an Aquarius!');
 }
 
   alert(`Thanks for playing ${responseOne}!`);
