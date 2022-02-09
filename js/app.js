@@ -7,13 +7,13 @@ let responseOne = prompt('What is your name?');
   alert(`Welcome ${responseOne}! Ready to play a guessing game about me?`);
   console.log ('User entered in ' + responseOne);
 
-let answerOne = prompt('Do I have a cat?').toLowerCase();
+let answerOne = prompt('Do I know how to juggle?').toLowerCase();
 
 if(answerOne === 'yes' || answerOne === 'y'){
-  alert('Yes I do have a cat');
+  alert('Yep. I\'m a part-time clown!');
   console.log ('User entered in ' + answerOne);
 } else if(answerOne === 'no' || answerOne === 'n'){
-  alert('sorry you are incorrect');
+  alert('Wrong answer!');
 }
 
 let answerTwo = prompt('Do I play music?').toUpperCase();
@@ -22,7 +22,7 @@ if(answerTwo === 'YES' || answerTwo === 'Y'){
   alert('You bet I do!');
   console.log ('User entered in ' + answerTwo);
 } else if(answerTwo === 'NO' || answerTwo === 'N'){
-  alert('sorry you are incorrect');
+  alert('Sorry. You are incorrect.');
 }
 
 let answerThree = prompt('Have I ever lived outside of USA?').toLowerCase();
