@@ -64,7 +64,7 @@ let userGuesses = 4;
   
 while(userGuesses !== 0){
   userGuesses--;
-  let userNumber = prompt('How many cats do I have?');
+  let userNumber = prompt('How many cats do I have?').toLowerCase();
   if(userNumber === correctNumber){
     counter++;
     alert('you are correct!');
@@ -80,24 +80,34 @@ while(userGuesses !== 0){
   }
 }
 
-  let places = ['Greece' , 'Vietnam' , 'France']
+let userGuessesTwo = 0;  
+let places = ['Greece' , 'Vietnam' , 'France']
 //  console.log(places.length);
-  let userGuessesTwo = 6;
 
-for(let i = 0; i < userGuessesTwo; i++) {
-   let userAnswer = prompt('Where are my top three places to travel?');
+while(userGuessesTwo < 6) {
+  
+   let userAnswer = prompt('Where are my top three places to travel?').toLowerCase();
+   userGuessesTwo++
 
 for(let j = 0; j < places.length; j++) {
+  console.log(userAnswer)
    if(userAnswer === places[j]) {
     counter++;
    alert('Nicely done!');
+   userGuessesTwo = 6
    break;
   }
 }
-  if(userAnswer === ) 
-    alert('Close, but not close enough!');
 }
+while(userGuessesTwo === 6){
+   alert('My top three places to travel are Greece, Vietnam, and France.')
+   break;
+}
+//    let userAnswer;
+//        userAnswer = ''
+//   if(userAnswer === ) 
+//     alert('Close, but not close enough!');
+//
 
 
-  { alert(`Thanks for playing ${responseOne}! You got ${counter} correct out of 7!`);
-}
+  alert(`Thanks for playing ${responseOne}! You got ${counter} correct out of 7!`);
