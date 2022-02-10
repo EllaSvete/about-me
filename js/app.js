@@ -78,29 +78,32 @@ function questionFive(){
 }
 questionFive();
 
+function questionSix(){
+  let correctNumber = 1;
+  let userGuesses = 4;
+  
+  while (userGuesses !== 0) {
+    userGuesses--;
+  
+    let userNumber = prompt('How many cats do I have?').toLowerCase();
+    if (+userNumber === correctNumber) {
+      counter++;
+      alert('you are correct!');
+      userGuesses = 0;
+    }
+    if (userNumber > 1) {
+      alert('too high');
+    }
+    if (userNumber < 1) {
+      alert('too low');
+    }
+    if (userGuesses === 0) {
+      alert('I have 1 cat.');
+    }
+  }
 
-let correctNumber = 1;
-let userGuesses = 4;
-
-while (userGuesses !== 0) {
-  userGuesses--;
-
-  let userNumber = prompt('How many cats do I have?').toLowerCase();
-  if (+userNumber === correctNumber) {
-    counter++;
-    alert('you are correct!');
-    userGuesses = 0;
-  }
-  if (userNumber > 1) {
-    alert('too high');
-  }
-  if (userNumber < 1) {
-    alert('too low');
-  }
-  if (userGuesses === 0) {
-    alert('I have 1 cat.');
-  }
 }
+questionSix();
 
 let userGuessesTwo = 6;
 let places = ['Greece', 'Vietnam', 'France']
