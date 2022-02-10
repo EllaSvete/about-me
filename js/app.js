@@ -59,13 +59,14 @@ if(answerFive === 'yes' || answerFive ==='y'){
 }
 
 
-let correctNumber = '1';
+let correctNumber = 1;
 let userGuesses = 4;
   
 while(userGuesses !== 0){
   userGuesses--;
+
   let userNumber = prompt('How many cats do I have?').toLowerCase();
-  if(userNumber === correctNumber){
+  if(+userNumber === correctNumber){
     counter++;
     alert('you are correct!');
     userGuesses = 0; }
@@ -80,22 +81,20 @@ while(userGuesses !== 0){
   }
 }
 
-let userGuessesTwo = 0;  
+let userGuessesTwo = 6;  
 let places = ['Greece' , 'Vietnam' , 'France']
 //  console.log(places.length);
 
-while(userGuessesTwo < 6) {
-  
+while(userGuessesTwo < 0) {
+  userGuessesTwo--;
    let userAnswer = prompt('Where are my top three places to travel?').toLowerCase();
-   userGuessesTwo++
-
-for(let j = 0; j < places.length; j++) {
+   
+for(let i = 0; i < places.length; i++) {
   console.log(userAnswer)
-   if(userAnswer === places[j]) {
+   if(userAnswer === places[i]) {
     counter++;
-   alert('Nicely done!');
-   userGuessesTwo = 6
-   break;
+     alert('Nicely done!');
+     userGuessesTwo = 1;
   }
 }
 }
