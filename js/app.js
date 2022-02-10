@@ -36,15 +36,19 @@ function questionTwo(){
 }
 questionTwo();
 
-let answerThree = prompt('Have I ever lived outside of USA?').toLowerCase();
+function questionThree(){
+  let answerThree = prompt('Have I ever lived outside of USA?').toLowerCase();
+  
+  if (answerThree === 'yes' || answerThree === 'y') {
+    counter++;
+    alert(`Correct ${responseOne}!! I lived in Chile for 10 months.`);
+    console.log('User entered in ' + answerThree);
+  } else if (answerThree === 'no' || answerThree === 'n') {
+    alert('Nice try!');
+  }
 
-if (answerThree === 'yes' || answerThree === 'y') {
-  counter++;
-  alert(`Correct ${responseOne}!! I lived in Chile for 10 months.`);
-  console.log('User entered in ' + answerThree);
-} else if (answerThree === 'no' || answerThree === 'n') {
-  alert('Nice try!');
 }
+questionThree();
 
 let answerFour = prompt('Do I like to cook?').toLowerCase();
 
