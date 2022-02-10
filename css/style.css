@@ -52,3 +52,30 @@ footer {
 }
 
 
+
+ol{
+  font-size: 16px;
+  font-family: monospace;
+  margin-top: 8px;
+  line-height: 2em;
+  list-style: number;
+
+}
+
+ul {
+  font-size: 16px;
+  font-family: monospace;
+  margin-top: 8px;
+  line-height: 2em;
+  list-style: circle;
+
+
+}
+
+h2 {
+  margin-top: 3em;
+  font-size: 18px;
+  font-family: monospace;
+  
+}
+
