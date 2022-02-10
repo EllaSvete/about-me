@@ -19,16 +19,16 @@ Learning Journal Questions:
 
 I have never thought about the ways in which adults learn differently than children. Personally, if I am not motivated or see how learning something new will overall affect my life I am less willing to take the time to learn whatever that may be. I am extremely interest motivated and if I am not engaged I will have a hard time retaining the information. From what we learned today, I feel extremely motivated and excited to build on my new skills. I also recognize that there is so much information that it is impossible to rely solely on our instructor. I plan to try to always hit stretch goals, and to spend time learning extra things in CSS and JS that may not be covered in class. I think measuring what I learn come naturally, but i look forward to these learning journals to be a useful guide in measuring and evaluating what I have learned.
 
-LAB - 02
+LAB - 03
 About Me
 This is an 'About Me' guessing game page that prompts the use with questions using IF/ELSE statements. I utilized html, css, and js to build and publish this page. Once you enter the site, there is a paragraph about the author.
 
 Author: Ella Svete
-L
-inks and Resources:
+
+Links and Resources:
 I had a lot of help from TA's for the nested loop.
 
-submission PR:
+Submission PR:
 
 Reflections and Comments:
 
