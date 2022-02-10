@@ -50,15 +50,19 @@ function questionThree(){
 }
 questionThree();
 
-let answerFour = prompt('Do I like to cook?').toLowerCase();
+function questionFour(){
+  let answerFour = prompt('Do I like to cook?').toLowerCase();
+  
+  if (answerFour === 'yes' || answerFour === 'y') {
+    counter++;
+    alert('Yes. I love cooking with my partner.');
+    console.log('User entered in ' + answerFour);
+  } else if (answerFour === 'no' || answerFour === 'n') {
+    alert('fail!');
+  }
 
-if (answerFour === 'yes' || answerFour === 'y') {
-  counter++;
-  alert('Yes. I love cooking with my partner.');
-  console.log('User entered in ' + answerFour);
-} else if (answerFour === 'no' || answerFour === 'n') {
-  alert('fail!');
 }
+questionFour();
 
 let answerFive = prompt('Is my astrological sign Scorpio?').toLowerCase();
 
