@@ -21,16 +21,20 @@ let answerOne = prompt('Do I know how to juggle?').toLowerCase();
 
 }
 questionOne();
+// make sure syntax is correct
+function questionTwo(){
+  let answerTwo = prompt('Do I play music?').toUpperCase();
+  
+  if (answerTwo === 'YES' || answerTwo === 'Y') {
+    counter++;
+    alert('You bet I do!');
+    console.log('User entered in ' + answerTwo);
+  } else if (answerTwo === 'NO' || answerTwo === 'N') {
+    alert('Sorry. You are incorrect.');
+  }
 
-let answerTwo = prompt('Do I play music?').toUpperCase();
-
-if (answerTwo === 'YES' || answerTwo === 'Y') {
-  counter++;
-  alert('You bet I do!');
-  console.log('User entered in ' + answerTwo);
-} else if (answerTwo === 'NO' || answerTwo === 'N') {
-  alert('Sorry. You are incorrect.');
 }
+questionTwo();
 
 let answerThree = prompt('Have I ever lived outside of USA?').toLowerCase();
 
