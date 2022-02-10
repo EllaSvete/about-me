@@ -64,15 +64,19 @@ function questionFour(){
 }
 questionFour();
 
-let answerFive = prompt('Is my astrological sign Scorpio?').toLowerCase();
+function questionFive(){
+  let answerFive = prompt('Is my astrological sign Scorpio?').toLowerCase();
+  
+  if (answerFive === 'yes' || answerFive === 'y') {
+    counter++;
+    alert('No way! I\'m an Aquarius.');
+    console.log('User entered in ' + answerFive);
+  } else if (answerFive === 'no' || answerFive === 'n') {
+    alert('That\'s right! I\'m an Aquarius!');
+  }
 
-if (answerFive === 'yes' || answerFive === 'y') {
-  counter++;
-  alert('No way! I\'m an Aquarius.');
-  console.log('User entered in ' + answerFive);
-} else if (answerFive === 'no' || answerFive === 'n') {
-  alert('That\'s right! I\'m an Aquarius!');
 }
+questionFive();
 
 
 let correctNumber = 1;
