@@ -106,10 +106,10 @@ function questionSix(){
 questionSix();
 
 let userGuessesTwo = 6;
-let places = ['Greece', 'Vietnam', 'France']
+let places = ['greece', 'vietnam', 'france']
 //  console.log(places.length);
 
-while (userGuessesTwo < 0) {
+bob: while (userGuessesTwo > 0) {
   userGuessesTwo--;
   let userAnswer = prompt('Where are my top three places to travel?').toLowerCase();
 
@@ -118,8 +118,10 @@ while (userGuessesTwo < 0) {
     if (userAnswer === places[i]) {
       counter++;
       alert('Nicely done!');
-      userGuessesTwo = 1;
+      console.log('we Made It')
+      break bob;
     }
+  
   }
 }
 while (userGuessesTwo === 6) {
