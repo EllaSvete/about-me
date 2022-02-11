@@ -105,34 +105,33 @@ function questionSix(){
 }
 questionSix();
 
-let userGuessesTwo = 6;
-let places = ['greece', 'vietnam', 'france']
-//  console.log(places.length);
-
-bob: while (userGuessesTwo > 0) {
-  userGuessesTwo--;
-  let userAnswer = prompt('Where are my top three places to travel?').toLowerCase();
-
-  for (let i = 0; i < places.length; i++) {
-    console.log(userAnswer)
-    if (userAnswer === places[i]) {
-      counter++;
-      alert('Nicely done!');
-      console.log('we Made It')
-      break bob;
-    }
+function questionSeven(){
+  let userGuessesTwo = 6;
+  let places = ['greece', 'vietnam', 'france']
+  //  console.log(places.length);
   
+  bob: while (userGuessesTwo > 0) {
+    userGuessesTwo--;
+    let userAnswer = prompt('Where are my top three places to travel?').toLowerCase();
+  
+    for (let i = 0; i < places.length; i++) {
+      console.log(userAnswer)
+      if (userAnswer === places[i]) {
+        counter++;
+        alert('Nicely done!');
+        console.log('we Made It')
+        break bob;
+      }
+    
+    }
   }
+  
 }
+questionSeven();
+
 while (userGuessesTwo === 6) {
   alert('My top three places to travel are Greece, Vietnam, and France.')
   break;
 }
-//    let userAnswer;
-//        userAnswer = ''
-//   if(userAnswer === ) 
-//     alert('Close, but not close enough!');
-//
-
 
 alert(`Thanks for playing ${responseOne}! You got ${counter} correct out of 7!`);
